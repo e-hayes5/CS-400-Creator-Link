@@ -105,9 +105,12 @@ a { color: var(--royal); }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 56px;
+  grid-template-columns: 1fr;
   align-items: center;
+}
+
+.hero-copy {
+  max-width: 800px;
 }
 
 .eyebrow {
