@@ -315,8 +315,26 @@ a { color: var(--royal); }
   width: 96px;
   height: 96px;
   border-radius: 50%;
+  overflow: hidden;
   background: var(--royal-tint-2);
   margin: 0 auto 16px;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fix Liz's photo */
+.team-card:nth-child(1) .team-photo img {
+  object-position: center top;
+}
+
+/* Fix Aidan's photo */
+.team-card:nth-child(3) .team-photo img {
+  object-position: center top;
 }
 
 .team-role { color: var(--royal); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.6em; }
@@ -374,3 +392,4 @@ a { color: var(--royal); }
   .site-nav a { margin-left: 16px; }
   .float-badge { display: none; }
 }
+
