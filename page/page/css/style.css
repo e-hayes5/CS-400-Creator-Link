@@ -345,7 +345,8 @@ a { color: var(--royal); }
 
 .video-frame { margin-top: 24px; }
 
-.video-placeholder {
+.video-placeholder,
+.video-pitch {
   display: flex;
   align-items: center;
   gap: 16px;
