@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features — KreaterLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="wrap header-row">
+<a class="logo" href="index.html">KreaterLink</a>
+<nav class="site-nav">
+<a href="design_artifacts.html">Design Artifacts</a>
+<a href="interviews/index.html">Interviews</a>
+<a href="personas/index.html">Personas</a>
+<a href="scenarios/index.html">Scenarios</a>
+<a href="user_stories.html">User Stories</a>
+<a href="features.html">Features</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<h1>Features</h1>
+<p>Listed from most to least important. <strong>Bold</strong> features are required for our minimum viable product (MVP): a verified creator can find another creator, message them and set up a collab. Report and block and Skills (tags) come right after.</p>
+<h2>Feature list</h2>
+<section class="feature-entry mvp">
+<h3>Feature 1: <strong>User authentication</strong></h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to sign up and log in securely so that I can only manage my profile and conversations.</li><li>As a creator, I want to reset my password so that I can regain access if I forget it.</li><li>As a creator, I want to log out so that my account stays safe on shared devices.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Passwords must be stored hashed. Logging in with a third-party account may depend on that platform's terms. Profile data that users share must be kept secure.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's and Derek's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry mvp">
+<h3>Feature 2: <strong>View profile</strong></h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a small creator, I want to list my genres, time zone, and usual stream times on my profile so that compatible creators can find me.</li><li>As a creator, I want to read another creator's content style and community description so that I can tell if our chats will get along.</li><li>As a creator, I want to view another creator's profile before confirming a collab so that I know who I'm about to play with.</li><li>As a creator, I want to see whether the creator's content is family friendly so that I can protect my community.</li><li>As a creator, I want to read reviews from a creator's past collab partners so that I can spot problems before going live with them.</li><li>As a wellness creator, I want to see whether a creator's credentials are verified so that I know I'm working with someone credible.</li><li>As a creator, I want to edit my own profile so that it stays accurate.</li><li>As a collab organizer, I want to see a creator's reviews from past collab partners before inviting them so that I can choose reliable partners.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Users must be able to control which profile details are public. Reviews and credential verification need a way to prevent fake reviews and fake credentials.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's, Derek's, and Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry mvp">
+<h3>Feature 3: <strong>Link platforms</strong></h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to see that another creator's Twitch account is verified so that I know who they say they are.</li><li>As a creator, I want to watch clips from a creator profile so that I know what kind of energy they have before I reach out to them.</li><li>As a creator, I want to share my gamertag in private with a group or person so that the invite can be sent before the stream.</li><li>As a creator, I want to unlink a platform so that I have control of what may appear on my profile.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Platforms like Twitch, YouTube, TikTok, and Instagram have their own API rules and rate limits. Some may require approval before we can read account data. Gamertags must only be visible to people in the same group or person.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's, Derek's, and Marcus's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry mvp">
+<h3>Feature 4: <strong>Match with other creators</strong></h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a small creator, I want to search for creators by genre, time zone, and audience size so that I find people at a similar stage to me.</li><li>As a beginning creator, I want to search for creators by niche so that I only see people who make health and wellness content.</li><li>As a creator, I want to be matched when another creator also shows interest in me so that we can start a conversation.</li><li>As a creator, I want to be notified of a new match so that I can respond quickly.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Matching quality is limited by the number of creators using the app.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's and Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry mvp">
+<h3>Feature 5: <strong>Reply</strong></h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a shy creator, I want to send a short intro message that suggests a casual voice call so that getting to know someone feels low-pressure.</li><li>As an event organizer, I want a group chat for each event so that all communication stays in one place.</li><li>As a creator, I want to reply to a specific message so that the conversation stays clear.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Messages must be delivered reliably and only to users who have matched or who share an event.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry mvp">
+<h3>Feature 6: <strong>Create availability</strong></h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a part-time creator, I want to set my weekly availability on my profile so that other creators know when I can collab.</li><li>As a collab organizer, I want the app to split my available hours into fixed-length sessions so that I do not have to build the schedule by hand.</li><li>As a collab organizer, I want to set how many spots each session has so that the group size matches the game, such as trios.</li><li>As a creator with an unpredictable schedule, I want to post a looking-for-group (LFG) window for tonight so that I can find people to play with on short notice.</li><li>As a content creator, I want to state the time, platform, and whether it is family friendly in an LFG window so that I don't have to explain it to each person myself.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Must handle different time zones.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Derek's and Marcus's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry mvp">
+<h3>Feature 7: <strong>Request collab</strong></h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to claim an open slot on someone's collab post so that I can join without a back-and-forth conversation.</li><li>As a collab organizer, I want to send a collab invite with the date, time, game, and purpose included so that busy creators can decide quickly.</li><li>As a creator, I want to send a skill-swap request that says what I'm offering and what I need so that the other creator understands the trade right away.</li><li>As a collab organizer, I want to see whether each invite has been seen, accepted, or declined so that I know where everyone stands.</li><li>As a collab organizer, I want the app to send an automatic reminder when someone has not answered an invite so that I do not have to chase them myself.</li><li>As a content creator, I want a separate inbox for collab invites so that I can keep DMs and collab invites organized.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Depends on availability being created first. Collab invites should be kept in a separate inbox from messages.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Derek's and Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 8: Report and block</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a content creator, I want to report a creator I have collabed with, with a reason and a timestamp, so that I can keep my community safer.</li><li>As a content creator, I want to block certain content creators so that they can no longer message me or see my availability.</li><li>As a content creator, I want to see the confirmation and outcome of my report so that I know it was received and acted on.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Reports must be reviewed by a moderator. Blocking must hide the blocked creator from messages, availability and search.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 9: Skills (tags)</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to add personality tags to my profile, such as "sarcastic" or "dark humor," so that people know what my content feels like.</li><li>As a creator, I want to add playstyle and etiquette tags to my profile, such as "mutes when not talking," so that others know what I'm like to play with.</li><li>As a creator, I want to list the skills I can offer on my profile so that others know what I can bring to a collab.</li><li>As a beginning creator, I want to filter creators by the skills they can help with, such as video editing, so that I can find someone who can teach me.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Tags must come from a fixed list we make, or free-text tags must be moderated, so they follow community guidelines.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's, Marcus's, and Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 10: Link calendar</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a collab organizer, I want claimed slots to appear on my calendar and sync to Google Calendar so that I can see my week at once.</li><li>As a charity event participant, I want to export my slot to Google Calendar so that it shows up with the rest of my plans.</li><li>As a creator, I want to schedule a video call through the app's calendar so that we can agree on a time without messaging back and forth.</li><li>As a creator, I want my scheduled sessions to sync to Google Calendar so that I don't double-book myself.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Requires calendar API permissions and user consent.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's, Derek's, and Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 11: Reminders</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a content creator, I want the app to remind my collaborators a week in advance about a collab so that they do not miss it.</li><li>As a collab member, I want a reminder before an event that shows the start time in my own time zone so that I show up at the right time.</li><li>As a participant, I want a confirmation and a reminder an hour before my slot so that I show up on time.</li><li>As a collab member, I want a reminder the day before my video is due so that I don't miss my posting date.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Reminders must be sent in each person's own time zone.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's, Derek's, Marcus's, and Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 12: Cancel and reschedule</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As an event organizer, I want to mark that I can't make it so that I don't have to message every player one by one.</li><li>As an event organizer, I want to choose whether to reschedule or let the group continue without me so that the group isn't left stuck.</li><li>As an event organizer, I want to open my spot to other players so that the group isn't a player short.</li><li>As a group member, I want to be notified automatically when someone cancels so that I know right away what is happening.</li><li>As a creator looking for a raid, I want to see open spots posted by other groups so that I can fill in on short notice.</li><li>As an event organizer, I want to suggest alternative times and let the group vote in the event chat so that we can pick a new time quickly.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Every group member must be notified at once. Open spots should only be shown to creators who match the game and time.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Marcus's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 13: Events and community days</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As an event organizer, I want to create a community day event with several time slots so that I don't have to sort people into groups by hand.</li><li>As an event organizer, I want to set how many players fit in each slot so that every group is the right size.</li><li>As an event organizer, I want a shareable web link for my event so that I can post it on Twitter and in my Discord.</li><li>As a viewer or smaller creator, I want to pick an open slot from the link without messaging the organizer so that I can join without a back-and-forth conversation.</li><li>As an event organizer, I want to see the full roster on my calendar so that I know who is in each slot.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Slot booking must prevent overbooking. A shared link should only show open slots.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Marcus's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 14: Swipe</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to swipe through suggested creators so that I can quickly show interest or pass.</li><li>As a creator, I want to undo my last swipe so that an accidental pass does not lose a good match.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Must work well on mobile phones and have a button alternative for accessibility.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 15: Feedback requests</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a beginning creator, I want to post a feedback request in my niche's community space so that experienced creators can review my content.</li><li>As a creator, I want to upload draft videos and thumbnails privately so that only community members can see work I haven't published yet.</li><li>As a creator, I want to ask for feedback on specific things, such as color, fonts or my opening hook, so that the comments are useful.</li><li>As a creator giving feedback, I want to leave comments tied to a moment in a video so that the person knows exactly what I mean.</li><li>As a beginning creator, I want to save feedback into a style guide on my profile so that I can keep my posts consistent.</li><li>As a creator, I want to be notified when someone comments on my feedback request so that I can respond while it's still relevant.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Draft uploads must only be visible to members of the community. Comments need moderation.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 16: Collab projects</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to create a collab project and invite other creators so that we can plan a multi-day series in one place.</li><li>As a collab organizer, I want a shared posting calendar so that everyone knows which day each video goes live.</li><li>As a collab organizer, I want to assign filming and editing tasks to each creator so that it's clear who is responsible for what.</li><li>As a collab member, I want a shared folder for templates, fonts and colors so that our videos look consistent across all of our accounts.</li><li>As a collab organizer, I want to see which tasks are done so that I can follow up only when something is behind.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Shared folders need storage limits and must only be open to project members.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Rebecca's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 17: React</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to react to a message with an emoji so that I can respond quickly without typing.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>Needs a limited emoji set for a first release.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's scenarios.</td></tr>
+</table>
+</section>
+<section class="feature-entry">
+<h3>Feature 18: Delete chat</h3>
+<table class="feature-table">
+<tr><th scope="row">Description</th><td><ul><li>As a creator, I want to delete a chat so that I can remove conversations I no longer need.</li><li>As a creator, I want to delete a single message I sent so that I can fix mistakes.</li></ul></td></tr>
+<tr><th scope="row">Constraints</th><td>The rules for deletion must be clear to both users, so whether a chat is removed for both people or only for the person who deletes it.</td></tr>
+<tr><th scope="row">Comments</th><td>Based on Maya's scenarios.</td></tr>
+</table>
+</section>
+<h2>Process pictures</h2>
+<p>Pictures from when we grouped our user stories into features.</p>
+<div class="process-placeholder">Process pictures go here</div>
+<!-- replace the box above with <img src="img/your-picture.jpg" alt="..."> for each picture -->
+<p><a href="design_artifacts.html">Back to design artifacts</a></p>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>&copy; 2026 KreaterLink. Built for CS400-ON.</p>
+</div>
+</footer>
+</body>
+</html>
