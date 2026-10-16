@@ -489,3 +489,5 @@ a { color: var(--royal); }
 .feature-table ul { margin: 0; padding-left: 1.1em; }
 .feature-table li { margin-bottom: 0.5em; }
 .process-placeholder { display: flex; align-items: center; justify-content: center; min-height: 200px; max-width: 860px; margin-bottom: 2em; background: var(--royal-tint); border: 1.5px dashed var(--royal-tint-2); border-radius: 16px; color: var(--text-muted); font-weight: 500; }
+
+.feature-card .feature-example { margin-top: 0.7em; font-size: 0.9rem; color: var(--text); }
